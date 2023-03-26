@@ -67,6 +67,8 @@ public class GameBoard {
 
 		if (testRow && testColumn && testBox) {
 			this.gameBoard[playRow][playColumn] = number;
+		} else {
+			throw new IllegalArgumentException("Number is duplicated");
 		}
 	}
 
