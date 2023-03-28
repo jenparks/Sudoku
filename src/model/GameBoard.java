@@ -57,9 +57,6 @@ public class GameBoard {
 		if (playColumn > 8 || playColumn < 0) {
 			throw new IllegalArgumentException("Column must be between 0 and 8");
 		}
-		if (this.gameBoard[playRow][playColumn] != 0) {
-			throw new IllegalArgumentException("Game area is not empty");
-		}
 
 		boolean testRow = this.validateRow(number, this.buildRowFromRow(playRow));
 		boolean testColumn = this.validateRow(number, this.buildRowFromColumn(playColumn));
